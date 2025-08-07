@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorry Deeksha ji</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      display: none;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body onclick="showMessage()">
+  <audio autoplay loop>
+    <source src="sorry.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="message" id="msgBox">
+    <h1>Plijij maff kr do Deeksha ji 😔🙏</h1>
+    <p>Sorry 💔</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('msgBox').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
